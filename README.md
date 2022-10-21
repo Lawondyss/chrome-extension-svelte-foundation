@@ -1,5 +1,15 @@
 # Foundation for create Chrome extension
-Just clone and use
+Just clone and use ;o)
+
+## Chrome storages
+There are three classes representing Chrome storages.
+ 1. `ChromeLocalStorage`
+    Stores data only on the local device. They are not available on any other device.
+ 2. `ChromeSyncStorage`
+    Data are syncs across user devices.
+ 3. `ChromeInMemoryStorage`
+   Stores data in memory where it is available only while the application is running.
+
 
 ## Fields
 
@@ -27,10 +37,11 @@ Field `options_page` in `manifest.json`.
 
 ## Roadmap
     ✓ Base skeleton
-    ✗ Chrome storage
+    ✓ Chrome storages
     ✗ Popup
     ✗ Tailwind
     ✗ Base UI components
     ✗ Background worker
+    ✗ WebSocket monitoring
     ✗ Content script
     ✗ Options
