@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 
 const srcDir = resolve(__dirname, 'src')
 const libsDir = resolve(srcDir, 'libs')
+const componentsDir = resolve(srcDir, 'components')
+const fieldsDir = resolve(srcDir, 'fields')
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,6 +14,17 @@ export default defineConfig({
 		alias: {
 			src: srcDir,
 			libs: libsDir,
+			components: componentsDir,
+		},
+	},
+	build: {
+		rollupOptions: {
+			input: {
+				popup: resolve(fieldsDir, 'popup', 'index.html'),
+			},
+			output: {
+				entryFileNames: (chunk) => `src/fields/${chunk.name}/index.js`,
+			},
 		},
 	},
 })

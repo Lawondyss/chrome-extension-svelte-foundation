@@ -38,7 +38,7 @@ Field `options_page` in `manifest.json`.
 ## Roadmap
     ✓ Base skeleton
     ✓ Chrome storages
-    ✗ Popup
+    ✓ Popup
     ✗ Tailwind
     ✗ Base UI components
     ✗ Background worker
