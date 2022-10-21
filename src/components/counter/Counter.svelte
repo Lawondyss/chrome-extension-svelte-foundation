@@ -11,49 +11,14 @@
     $: persistent && $counter(id, count)
 </script>
 
-<div class="wrapper">
+<div class="flex gap-1.5 p-1.5 bg-white border rounded-lg min-w-[80%] overflow-hidden">
     <button on:click={() => count--}>-</button>
-    <div class="counter">{count}</div>
+    <div class="flex justify-center items-center flex-1 border rounded-md font-mono font-semibold text-base pt-[1px]">{count}</div>
     <button on:click={() => count++}>+</button>
 </div>
 
 <style>
-    .wrapper {
-        display: flex;
-        gap: 0.375rem;
-        min-width: 80%;
-        padding: 0.375rem;
-        background-color: rgb(255 255 255);
-        border: 1px solid #e5e7eb;
-        border-radius: 0.5rem;
-        overflow: hidden;
-    }
-
     button {
-        display: block;
-        width: auto;
-        border: 1px solid #e5e7eb;
-        border-radius: 0.375rem;
-        margin: 0;
-        padding:.25rem 1rem;
-        text-transform: none;
-        color: rgb(255 255 255);
-        background-color: rgb(37 99 235);
-        cursor: pointer;
-    }
-
-    .counter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        border: 1px solid #e5e7eb;
-        border-radius: 0.375rem;
-        margin: 0;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 700;
-        font-size: large;
-        padding-top: 3px;
-        line-height: 1.5;
+        @apply block border rounded-md text-white bg-blue-600 cursor-pointer px-4 text-lg font-bold;
     }
 </style>

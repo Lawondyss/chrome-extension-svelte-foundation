@@ -8,7 +8,7 @@ There are three classes representing Chrome storages.
  2. `ChromeSyncStorage`
     Data are syncs across user devices.
  3. `ChromeInMemoryStorage`
-   Stores data in memory where it is available only while the application is running.
+    Stores data in memory where it is available only while the application is running.
 
 
 ## Fields
@@ -39,7 +39,7 @@ Field `options_page` in `manifest.json`.
     ✓ Base skeleton
     ✓ Chrome storages
     ✓ Popup
-    ✗ Tailwind
+    ✓ Tailwind
     ✗ Base UI components
     ✗ Background worker
     ✗ WebSocket monitoring

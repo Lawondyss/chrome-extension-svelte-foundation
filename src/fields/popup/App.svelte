@@ -4,9 +4,9 @@
     export let name: string
 </script>
 
-<h1>Hello from {name}</h1>
+<h1 class="font-serif font-bold text-3xl text-center py-4">Hello from <i>{name}</i></h1>
 
-<div class="container">
+<div class="grid grid-cols-2 gap-4">
     <div class="column">
         <h2>Persistent</h2>
         <Counter persistent />
@@ -19,30 +19,11 @@
 </div>
 
 <style>
-    h1 {
-        font-size: 1.75rem;
-        font-weight: 700;
-        text-align: center;
-        margin: 2rem 0;
-    }
-
     h2 {
-        width: auto;
-        margin-bottom: 1rem;
-        font-size: 1.125rem;
-        font-weight: 600;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 2rem 1rem;
+        @apply w-auto text-xl font-semibold;
     }
 
     .column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .5rem;
+        @apply flex flex-col items-center gap-2;
     }
 </style>
