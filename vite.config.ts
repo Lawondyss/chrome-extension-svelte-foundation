@@ -21,6 +21,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				popup: resolve(fieldsDir, 'popup', 'index.html'),
+				background: resolve(fieldsDir, 'background', 'index.ts'),
 			},
 			output: {
 				entryFileNames: (chunk) => `src/fields/${chunk.name}/index.js`,

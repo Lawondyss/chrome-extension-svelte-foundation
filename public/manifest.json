@@ -20,7 +20,10 @@
             "128": "/icons/icon-128.png"
         }
     },
+    "background": {
+        "service_worker": "src/fields/background/index.js"
+    },
     "permissions": [
-        "storage"
+        "storage", "notifications", "tabs"
     ]
 }
