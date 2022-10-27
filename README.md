@@ -33,14 +33,17 @@ Field `options_page` in `manifest.json`.
 ## Build on
  - [Vite](https://vitejs.dev/)
  - [Svelte](https://svelte.dev/)
+ - [Felte](https://felte.dev/)
+ - [Yup](https://github.com/jquense/yup)
  - [Tailwind](https://tailwindcss.com/)
+ - [DaisyUI](https://daisyui.com/)
 
 ## Roadmap
     ✓ Base skeleton
     ✓ Chrome storages
     ✓ Popup
     ✓ Tailwind
-    ✗ Base UI components
+    ✓ Base UI components
     ✗ Background worker
     ✗ WebSocket monitoring
     ✗ Content script
