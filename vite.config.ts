@@ -22,9 +22,15 @@ export default defineConfig({
 			input: {
 				popup: resolve(fieldsDir, 'popup', 'index.html'),
 				background: resolve(fieldsDir, 'background', 'index.ts'),
+				content: resolve(fieldsDir, 'content', 'index.ts'),
+				monitor: resolve(libsDir, 'websocket_monitor.ts'),
 			},
 			output: {
-				entryFileNames: (chunk) => `src/fields/${chunk.name}/index.js`,
+				entryFileNames: chunk => {
+					if (chunk.name === 'monitor') return 'src/libs/websocket_monitor.js'
+
+					return `src/fields/${chunk.name}/index.js`
+				},
 			},
 		},
 	},

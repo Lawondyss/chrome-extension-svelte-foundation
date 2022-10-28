@@ -1,6 +1,11 @@
 chrome.runtime.onInstalled.addListener(() => {
     console.log('👋 Hello from service worker');
 
+    chrome.runtime.onMessage.addListener(message => {
+        const data = JSON.parse(message)
+        console.log('Message data', data);
+    })
+
     // sets the site to open after uninstalling a extension
     chrome.runtime.setUninstallURL('https://example.com')
 

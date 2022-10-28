@@ -23,6 +23,18 @@
     "background": {
         "service_worker": "src/fields/background/index.js"
     },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/fields/content/index.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["src/libs/websocket_monitor.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
     "permissions": [
         "storage", "notifications", "tabs"
     ]

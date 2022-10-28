@@ -45,6 +45,6 @@ Field `options_page` in `manifest.json`.
     ✓ Tailwind
     ✓ Base UI components
     ✓ Background worker
-    ✗ WebSocket monitoring
-    ✗ Content script
+    ✓ WebSocket monitoring
+    ✓ Content script
     ✗ Options

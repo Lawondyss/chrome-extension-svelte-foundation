@@ -3,7 +3,7 @@ import App from './App.svelte'
 
 const name = 'Chrome extension'
 
-function run() {
+function run(): void {
     new App({
         target: document.body,
         props: { name },
