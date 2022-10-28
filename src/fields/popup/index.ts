@@ -1,4 +1,4 @@
-import 'src/app.css'
+import 'src/main.css'
 import App from './App.svelte'
 
 const name = 'Chrome extension'

@@ -25,7 +25,7 @@ chrome.runtime.onInstalled.addListener(() => {
         const options: chrome.notifications.NotificationOptions<true> = {
             title: 'Example of notification',
             message: 'When clicked, a new popup window opens with the defined page.\nThe notification itself disappears after 10 seconds.',
-            iconUrl: chrome.runtime.getURL('icons/icon-48.png'),
+            iconUrl: chrome.runtime.getURL('assets/icons/icon-48.png'),
             type: 'basic',
         }
         chrome.notifications.create(options, (notificationId: string) => {
