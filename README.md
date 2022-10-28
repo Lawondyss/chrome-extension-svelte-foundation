@@ -27,7 +27,7 @@ Field `content_scripts` in `manifest.json`.
 
 ### Options
 Customise the behavior of an extension by providing an options page.
-Field `options_page` in `manifest.json`.
+Field `options_ui` in `manifest.json`.
 
 
 ## Build on
@@ -47,4 +47,4 @@ Field `options_page` in `manifest.json`.
     ✓ Background worker
     ✓ WebSocket monitoring
     ✓ Content script
-    ✗ Options
+    ✓ Options

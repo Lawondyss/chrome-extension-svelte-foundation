@@ -23,6 +23,7 @@ export default defineConfig({
 				popup: resolve(fieldsDir, 'popup', 'index.html'),
 				background: resolve(fieldsDir, 'background', 'index.ts'),
 				content: resolve(fieldsDir, 'content', 'index.ts'),
+				options: resolve(fieldsDir, 'options', 'index.html'),
 				monitor: resolve(libsDir, 'websocket_monitor.ts'),
 			},
 			output: {
